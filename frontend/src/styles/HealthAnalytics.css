@@ -1,0 +1,23 @@
+.analytics {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.card {
+  background-color: #25244b;
+  padding: 20px;
+  border-radius: 8px;
+  width: 23%;
+  text-align: center;
+  color: #ecf0f1;
+}
+
+.card h3 {
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+}

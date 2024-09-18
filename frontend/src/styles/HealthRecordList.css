@@ -1,0 +1,30 @@
+.record-list {
+  margin-top: 20px;
+}
+
+.record-item {
+  background-color: #25244b;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.record-item span {
+  width: 20%;
+}
+
+.edit-btn, .delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+  background-color: #c0392b;
+}

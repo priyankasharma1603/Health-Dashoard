@@ -1,0 +1,158 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #3c005e, #7f00ff);
+  overflow: hidden;
+}
+
+/* Header Styles */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1f0030; /* Dark background for header */
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.dashboard-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.dashboard-header nav ul li {
+  display: inline;
+}
+
+.dashboard-header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.dashboard-header nav ul li a:hover {
+  color: #ffcc00; /* Change color on hover */
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.left-section {
+  width: 30%;
+  background: #1c0428;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: changeBackground 5s ease-in-out infinite alternate;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.animated-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  animation: moveLeftRight 3s ease-in-out infinite alternate;
+  transition: transform 0.3s ease;
+}
+
+.animated-image:hover {
+  transform: scale(1.2);
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+.right-section {
+  width: 70%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-record-btn {
+  background: #6200ea;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-record-btn:hover {
+  background: #3700b3;
+}
+
+@keyframes changeBackground {
+  0% {
+    background-color: #2a003e;
+  }
+  100% {
+    background-color: #440065;
+  }
+}
+
+
+.left-section {
+  flex: 1;
+  padding: 1rem;
+}
+
+.right-section {
+  flex: 2;
+  padding: 1rem;
+}
+
+.animated-image {
+  width: 100%;
+  height: auto;
+}
+
+.add-record-btn {
+  background-color: #4a09ee;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.add-record-btn:hover {
+  background-color: #0056b3;
+}
+
+.line-chart-container {
+  position: relative;
+  height: 300px; /* Adjust the height as needed */
+  width: 100%;
+  padding: 10px;
+  background: #06000874; /* Optional: add background color to make it stand out */
+  border-radius: 8px; /* Optional: add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for a lifted effect */
+  margin-bottom: 10px;
+  color: white;
+}

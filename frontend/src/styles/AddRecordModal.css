@@ -1,0 +1,104 @@
+/* Modal overlay */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+  background: linear-gradient(135deg, #a6066b, #311f72);
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  color: rgb(124, 124, 124);
+  max-width: 500px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Modal Title */
+.modal-title {
+  font-size: 24px;
+  color: #ffc8fa;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Input fields */
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #0026ff;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #6200ea;
+  outline: none;
+  box-shadow: 0 0 8px rgba(98, 0, 234, 0.5);
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #6200ea;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #3700b3;
+}
+
+/* Close Button */
+.close-btn {
+  background-color: #ff1744;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  background-color: #d50000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  form input {
+    font-size: 14px;
+  }
+
+  .submit-btn, .close-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
